@@ -1,0 +1,49 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.app{
+    min-height: 500px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Angular Animation CSS */
+.ng-enter { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+.ng-leave { animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+.page {
+    bottom:0; 
+    padding-top:220px;
+    position:absolute; 
+    top:0;
+    width:30%;
+}
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+.ng-enter { animation: scaleUp 0.5s both ease-in; }
+.ng-leave { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; }
+
+
+.page-q1 .panel-body, .page-calc .panel-body { background:#90d0cb; color:#006851; }
+.page-q2 .panel-body { background:#ffdfa4; color:#a55401; }
+.page-q3 .panel-body { background:#f2d6dd; color:#9e0001; }

@@ -1,0 +1,20 @@
+﻿<div class="{{pageClass}}" ng-controller="q1Ctrl">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h2 class="panel-title">Life Insurance Calculator </h2></div>
+        <div class="panel-body">
+
+            <div class="col-sm-6 form-group">
+                <label>Do you rent or pay mortgage? Please enter your monthly rent or mortgage owed.</label>
+                <div class="form-inline">
+                    <label>Monthly Rent:</label>
+                    <input class="form-control" type="number" name="rent" ng-model="rent" ng-change="change()" />
+                </div>
+                <div class="form-inline">
+                    <label>Mortgage:</label>
+                    <input class="form-control" type="number" name="mortgage" ng-model="mortgage" ng-change="change()" />
+                </div>
+                <a class="btn btn-primary" href="#/q2">Next</a>
+            </div>
+        </div>
+    </div>
+</div>
