@@ -15,24 +15,12 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public PartialViewResult Q1()
-        {
-            return PartialView();
-        }
+        public PartialViewResult Q1() => PartialView("~/Views/Home/Templates/Q1.cshtml");
+        
+        public PartialViewResult Q2() => PartialView("~/Views/Home/Templates/Q2.cshtml");
 
-        public PartialViewResult Q2()
-        {
-            return PartialView();
-        }
+        public PartialViewResult Q3() => PartialView("~/Views/Home/Templates/Q3.cshtml");
 
-        public PartialViewResult Q3()
-        {
-            return PartialView();
-        }
-
-        public PartialViewResult Calc()
-        {
-            return PartialView();
-        }
+        public PartialViewResult Calc() => PartialView("~/Views/Home/Templates/Calc.cshtml");
     }
 }
