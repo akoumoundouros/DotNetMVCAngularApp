@@ -10,7 +10,7 @@ And the following 3 questions:
 2. Do you have children, if so how many?
 3. How much outstanding debt do you have?
 
-The project is built in .NET MVC, and includes Bootstrap CSS framework as well as the AngularJS framework.
+The project is built in .NET MVC, and includes Bootstrap CSS framework as well as the AngularJS framework. It demonstrates AngularJS features including animations, and using a .NET API to serve as a backend to the AngularJS app.
 
 Assumptions:
 I have made the assumption that the users may need to enter both rental payments and mortgage value, and have allowed the calculation of both in my solution.
